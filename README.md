@@ -6,7 +6,6 @@ This project implements a neural network built from scratch to classify handwrit
 
 ## Key Features and Model Architecture
 Custom Neural Network Architecture: Flexible network with adjustable layers and activation functions.
-
 Batch Training and Gradient Descent: Implements efficient matrix-based calculations.
 
 The neural network is structured as follows:
