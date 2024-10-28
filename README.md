@@ -43,7 +43,7 @@ $$
   A^{[L]}_i = \frac{e^{Z^{[L]}_i}}{\sum_{j=1}^{K} e^{Z^{[L]}_j}}
   $$
 
-  - \( A^{[L]}_i \): Probability of class \( i \).
+  - '''\( A^{[L]}_i \): Probability of class \( i \)'''.
   - \( K \): Total number of classes (10 for MNIST).
 
 ### Loss Function
