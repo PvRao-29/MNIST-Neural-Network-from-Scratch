@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates a neural network built from scratch to classify handwritten digits using the MNIST dataset. Developed solely with numpy for matrix operations and pandas for data handling, this model achieves an impressive 94% accuracy on the 10,000-image test set. Building this network without deep learning libraries provided hands-on experience in linear algebra, matrix math, and neural network theory.
+This project implements a neural network built from scratch to classify handwritten digits using the MNIST dataset. Built entirely with numpy for matrix operations and pandas for data handling, the model achieves approximately 94% accuracy on a 10,000-image test set. This hands-on approach allowed me to deepen my understanding of both linear algebra and neural network theory.
 
 ## Project Goals
 Master Linear Algebra: Practice matrix math by implementing neural network components without frameworks like TensorFlow or PyTorch.
