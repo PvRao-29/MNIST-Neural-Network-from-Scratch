@@ -7,25 +7,23 @@ This project implements a neural network built from scratch to classify handwrit
 ## Model Architecture
 The neural network is structured as follows:
 
-Input Layer: Accepts flattened 28x28 images.
-Hidden Layers: Configurable fully-connected layers with ReLU activation.
-Output Layer: Softmax layer classifying digits from 0 to 9.
+Input Layer: Accepts flattened 28x28 images. <br/> 
+Hidden Layers: Configurable fully-connected layers with ReLU activation. <br/> 
+Output Layer: Softmax layer classifying digits from 0 to 9. <br/> 
 
 ## Forward Propagation Equations
 The core calculations in the network include:
 
 **1.Linear Transformation:**
 
-𝑍 = 𝑋 ⋅ 𝑊 + 𝐵
-where:
+𝑍 = 𝑋 ⋅ 𝑊 + 𝐵 <br/> 
+where: <br/> 
+ - 𝑋 is the input data matrix <br/> 
+ - 𝑊 is the weight matrix for each layer <br/> 
+ - 𝐵 is the bias vector <br/> 
 
- - 𝑋 is the input data matrix
- - 𝑊 is the weight matrix for each layer
- - 𝐵 is the bias vector
 
-
-**2. Activation (ReLU):**
-
+**2. Activation (ReLU):** <br/> 
 
  A = ReLU(𝑍) = max(0,𝑍)
 ⁡
