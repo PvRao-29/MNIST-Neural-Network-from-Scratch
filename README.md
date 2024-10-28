@@ -43,8 +43,8 @@ $$
   A^{[L]}_i = \frac{e^{Z^{[L]}_i}}{\sum_{j=1}^{K} e^{Z^{[L]}_j}}
   $$
 
-  - '''\( A^{[L]}_i \): Probability of class \( i \)'''.
-  - \( K \): Total number of classes (10 for MNIST).
+  - $$\( A^{[L]}_i \)$$: Probability of class \( i \).
+  - $$\( K \)$$: Total number of classes (10 for MNIST).
 
 ### Loss Function
 
@@ -54,9 +54,9 @@ $$
 \mathcal{L} = -\frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} y_{i,k} \log(A^{[L]}_{i,k})
 $$
 
-- \( m \): Number of examples.
-- \( y_{i,k} \): True label (one-hot encoded) for example \( i \) and class \( k \).
-- \( A^{[L]}_{i,k} \): Predicted probability for example \( i \) and class \( k \).
+- $$\( m \)$$: Number of examples.
+- $$\( y_{i,k} \)$$: True label (one-hot encoded) for example \( i \) and class \( k \).
+- $$\( A^{[L]}_{i,k} \)$$: Predicted probability for example \( i \) and class \( k \).
         
 ## Results
 The model achieved approximately 94% accuracy on the MNIST test set, showcasing its capacity to generalize well on unseen data.
