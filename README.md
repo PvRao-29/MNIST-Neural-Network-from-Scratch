@@ -1,4 +1,4 @@
-# MNIST Neural Network from Scratch
+## MNIST Neural Network from Scratch
 
 # Overview
 
