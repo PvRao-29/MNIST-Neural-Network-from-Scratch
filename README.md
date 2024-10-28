@@ -1,6 +1,7 @@
 # MNIST Neural Network from Scratch
 
-**Overview**\n
+**Overview**
+
 This project demonstrates a neural network built from scratch to classify handwritten digits using the MNIST dataset. Developed solely with numpy for matrix operations and pandas for data handling, this model achieves an impressive 94% accuracy on the 10,000-image test set. Building this network without deep learning libraries provided hands-on experience in linear algebra, matrix math, and neural network theory.
 
 **Project Goals**
