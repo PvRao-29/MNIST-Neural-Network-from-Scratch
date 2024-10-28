@@ -1,25 +1,25 @@
 # MNIST Neural Network from Scratch
 
-Overview
+**Overview**
 This project demonstrates a neural network built from scratch to classify handwritten digits using the MNIST dataset. Developed solely with numpy for matrix operations and pandas for data handling, this model achieves an impressive 94% accuracy on the 10,000-image test set. Building this network without deep learning libraries provided hands-on experience in linear algebra, matrix math, and neural network theory.
 
-Project Goals
+**Project Goals**
 Master Linear Algebra: Practice matrix math by implementing neural network components without frameworks like TensorFlow or PyTorch.
 Deepen Neural Network Theory: Develop and train each network component manually to gain practical insights into their mechanics.
 
-Key Features
+**Key Features**
 Custom Neural Network Architecture: Flexible network with adjustable layers and activation functions.
 Batch Training and Gradient Descent: Implements efficient matrix-based calculations.
 Strong Performance: Achieves ~94% accuracy on MNIST, demonstrating its reliability.
 
-Model Architecture
+**Model Architecture**
 The neural network is structured as follows:
 
 Input Layer: Accepts flattened 28x28 images.
 Hidden Layers: Configurable fully-connected layers with ReLU activation.
 Output Layer: Softmax layer classifying digits from 0 to 9.
 
-Forward Propagation Equations
+**Forward Propagation Equations**
 The core calculations in the network include:
 
 1.Linear Transformation:
@@ -31,10 +31,12 @@ where:
  - 𝑊 is the weight matrix for each layer
  - 𝐵 is the bias vector
 
+
 2. Activation (ReLU):
 
  A = ReLU(𝑍) = max(0,𝑍)
 ⁡
+
 3. Softmax Output:
 
 Softmax(𝑍)= 
@@ -44,10 +46,9 @@ e
 Z
  
 ​
- 
 This transforms the outputs into probabilities, summing to 1 for classification.
 
-Loss Function
+**Loss Function**
 The model minimizes cross-entropy loss:
 
 Loss
