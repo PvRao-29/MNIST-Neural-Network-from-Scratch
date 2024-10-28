@@ -32,7 +32,7 @@ Output Layer: Softmax layer classifying digits from 0 to 9. <br/>
 - Softmax Output:
   The final layer uses Softmax to convert outputs into probabilities:
   ```math
-  Softmax(Z) = \frac{e^{Z}}{\sum e^{Z}}
+  Softmax(Z) = \frac{e^{ Z}}{\sum e^{ Z}}
   ```
   This ensures that all output values sum to 1, making them interpretable as probabilities for classification.
 
