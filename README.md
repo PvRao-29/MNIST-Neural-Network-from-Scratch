@@ -22,19 +22,19 @@ Output Layer: Softmax layer classifying digits from 0 to 9. <br/>
      - X is the input data matrix.
      - W is the weight matrix for the layer.
      - B is the bias vector.
-
-   - Activation (ReLU): <br/> 
-     The ReLU activation function is applied to Z to introduce non-linearity: <br/> 
-     ```
-     A = max(0, Z)
-     ```
      
-   - Softmax Output:
-     The final layer uses Softmax to convert outputs into probabilities:
-     ```
-     Softmax(Z) = exp(Z) / sum(exp(Z))
-     ```
-     This ensures that all output values sum to 1, making them interpretable as probabilities for classification.
+- Activation (ReLU): <br/> 
+  The ReLU activation function is applied to Z to introduce non-linearity: <br/> 
+  ```
+  A = max(0, Z)
+  ```
+
+- Softmax Output:
+  The final layer uses Softmax to convert outputs into probabilities:
+  ```
+  Softmax(Z) = exp(Z) / sum(exp(Z))
+  ```
+  This ensures that all output values sum to 1, making them interpretable as probabilities for classification.
 
 ### Loss Function
 
