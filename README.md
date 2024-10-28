@@ -22,57 +22,24 @@ Output Layer: Softmax layer classifying digits from 0 to 9.
 Forward Propagation Equations
 The core calculations in the network include:
 
-Linear Transformation:
+1.Linear Transformation:
 
-𝑍
-=
-𝑋
-⋅
-𝑊
-+
-𝐵
-Z=X⋅W+B
+𝑍 = 𝑋 ⋅ 𝑊 + 𝐵
 where:
 
-𝑋
-X is the input data matrix
-𝑊
-W is the weight matrix for each layer
-𝐵
-B is the bias vector
-Activation (ReLU):
+ - 𝑋 is the input data matrix
+ - 𝑊 is the weight matrix for each layer
+ - 𝐵 is the bias vector
 
-𝐴
-=
-ReLU
-(
-𝑍
-)
-=
-max
+2. Activation (ReLU):
+
+ A = ReLU(𝑍) = max(0,𝑍)
 ⁡
-(
-0
-,
-𝑍
-)
-A=ReLU(Z)=max(0,Z)
-Softmax Output:
+3. Softmax Output:
 
-Softmax
-(
-𝑍
-)
-=
-𝑒
-𝑍
-∑
-𝑒
-𝑍
-Softmax(Z)= 
+Softmax(𝑍)= 
 ∑e 
 Z
- 
 e 
 Z
  
