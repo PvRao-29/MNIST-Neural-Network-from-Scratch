@@ -15,7 +15,7 @@ Output Layer: Softmax layer classifying digits from 0 to 9. <br/>
 ### Linear Transformation:
 
  - Each layer’s output Z is computed as:
-     ```
+     ```math
      Z = X * W + B
      ```
      Where:
@@ -25,7 +25,7 @@ Output Layer: Softmax layer classifying digits from 0 to 9. <br/>
      
 - Activation (ReLU): <br/> 
   The ReLU activation function is applied to Z to introduce non-linearity: <br/> 
-  ```
+  ```math
   A = max(0, Z)
   ```
 
@@ -39,13 +39,13 @@ Output Layer: Softmax layer classifying digits from 0 to 9. <br/>
 ### Loss Function
 
 The model minimizes cross-entropy loss during training, defined as:
-```
-Loss = -1/m * sum(y * log(ŷ))
+```math
+Loss = -\frac{1}{m} \sum y \log(\hat{y})
 ```
 Where:
-m is the number of samples.
-y is the true label vector.
-ŷ is the predicted probability vector for the true class.
+ - m is the number of samples.
+ - y is the true label vector.
+ - ŷ is the predicted probability vector for the true class.
         
 ## Results
 The model achieved approximately 94% accuracy on the MNIST test set, showcasing its capacity to generalize well on unseen data.
