@@ -1,44 +1,151 @@
 # MNIST Neural Network from Scratch
 
 Overview
-This project implements a neural network from scratch to classify handwritten digits from the MNIST dataset. Built entirely with numpy for matrix operations and pandas for data handling, the model achieves approximately 94% accuracy on a 10,000-image test set. This hands-on approach allowed me to deepen my understanding of both linear algebra and neural network theory.
+This project demonstrates a neural network built from scratch to classify handwritten digits using the MNIST dataset. Developed solely with numpy for matrix operations and pandas for data handling, this model achieves an impressive 94% accuracy on the 10,000-image test set. Building this network without deep learning libraries provided hands-on experience in linear algebra, matrix math, and neural network theory.
 
 Project Goals
-Enhance Linear Algebra Skills: Built without frameworks like TensorFlow or PyTorch, this project emphasizes matrix math fundamentals.
-Understand Neural Network Theory: By coding each component from scratch, I gained insights into the inner workings of neural networks.
-Key Features
-Customizable Neural Network Architecture: Easily adjustable layers and activation functions.
-Batch Training with Gradient Descent: Efficiently trains with matrix-based gradient calculations.
-Performance: Achieved ~94% accuracy on MNIST’s test set, demonstrating the network’s generalizability.
-Model Architecture
-The neural network consists of:
+Master Linear Algebra: Practice matrix math by implementing neural network components without frameworks like TensorFlow or PyTorch.
+Deepen Neural Network Theory: Develop and train each network component manually to gain practical insights into their mechanics.
 
-Input Layer: Accepts flattened 28x28 pixel images.
+Key Features
+Custom Neural Network Architecture: Flexible network with adjustable layers and activation functions.
+Batch Training and Gradient Descent: Implements efficient matrix-based calculations.
+Strong Performance: Achieves ~94% accuracy on MNIST, demonstrating its reliability.
+
+Model Architecture
+The neural network is structured as follows:
+
+Input Layer: Accepts flattened 28x28 images.
 Hidden Layers: Configurable fully-connected layers with ReLU activation.
-Output Layer: Softmax layer to classify images into one of 10 digits.
-Code Snippets
-Forward Pass
-python
-Copy code
-# Example of the forward pass
-def forward(X):
-    Z1 = np.dot(X, W1) + B1
-    A1 = np.maximum(0, Z1)  # ReLU activation
-    Z2 = np.dot(A1, W2) + B2
-    A2 = np.exp(Z2) / np.sum(np.exp(Z2), axis=1, keepdims=True)  # Softmax
-    return A2
-Training Loop
-python
-Copy code
-# Example of the training loop
-for epoch in range(epochs):
-    for batch in range(num_batches):
-        X_batch, y_batch = get_batch(X_train, y_train)
-        y_pred = forward(X_batch)
-        gradients = compute_gradients(y_pred, y_batch)
-        update_parameters(gradients)
+Output Layer: Softmax layer classifying digits from 0 to 9.
+
+Forward Propagation Equations
+The core calculations in the network include:
+
+Linear Transformation:
+
+𝑍
+=
+𝑋
+⋅
+𝑊
++
+𝐵
+Z=X⋅W+B
+where:
+
+𝑋
+X is the input data matrix
+𝑊
+W is the weight matrix for each layer
+𝐵
+B is the bias vector
+Activation (ReLU):
+
+𝐴
+=
+ReLU
+(
+𝑍
+)
+=
+max
+⁡
+(
+0
+,
+𝑍
+)
+A=ReLU(Z)=max(0,Z)
+Softmax Output:
+
+Softmax
+(
+𝑍
+)
+=
+𝑒
+𝑍
+∑
+𝑒
+𝑍
+Softmax(Z)= 
+∑e 
+Z
+ 
+e 
+Z
+ 
+​
+ 
+This transforms the outputs into probabilities, summing to 1 for classification.
+
+Loss Function
+The model minimizes cross-entropy loss:
+
+Loss
+=
+−
+1
+𝑚
+∑
+𝑖
+=
+1
+𝑚
+𝑦
+𝑖
+⋅
+log
+⁡
+(
+𝑦
+^
+𝑖
+)
+Loss=− 
+m
+1
+​
+  
+i=1
+∑
+m
+​
+ y 
+i
+​
+ ⋅log( 
+y
+^
+​
+  
+i
+​
+ )
+where:
+
+𝑚
+m is the number of samples
+𝑦
+𝑖
+y 
+i
+​
+  is the true label
+𝑦
+^
+𝑖
+y
+^
+​
+  
+i
+​
+  is the predicted probability for the true class
+        
 Results
-Trained on MNIST with approximately 94% accuracy on the test set, the network demonstrates robust performance in digit classification.
+The model achieved approximately 94% accuracy on the MNIST test set, showcasing its capacity to generalize well on unseen data.
 
 Credits
-Special thanks to Samson Zhang for his insightful videos that helped guide me through building this project.
+A huge thank you to Samson Zhang for his educational videos that were instrumental in guiding this project.
